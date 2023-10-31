@@ -32,7 +32,6 @@ class LoginView(APIView):
         password = serializer.validated_data['password']
         validate_password(password)
         user = authenticate(username=username, password=password)
-
         if user is not None:
             token, created = Token.objects.get_or_create(user=user)
             expiration_date = token.created + timedelta(days=1)
@@ -44,23 +43,18 @@ class LoginView(APIView):
             user_serializer = UserSerializer(user)
             response_data = {
                 "token": token.key,
-                "user": user_serializer.data,
-            }
-
+                "user": user_serializer.data,}
             return Response(success(response_data), status=status.HTTP_200_OK)
-
         raise AuthenticationFailed("Invalid username or password")
 
 
 class SignupView(APIView):
-
     def post(self, request, format=None):
         serializer = UserSerializer(data=request.data)
         if serializer.is_valid():
             username = serializer.validated_data['username']
             email = serializer.validated_data['email']
             password = serializer.validated_data['password']
-
             try:
                 validate_email(email)
             except ValidationError as email_error:
@@ -74,25 +68,20 @@ class SignupView(APIView):
             serializer = UserSerializer(user, context={'request': request})
             return Response(
                 success(serializer.data),
-                status=status.HTTP_201_CREATED,
-            )
+                status=status.HTTP_201_CREATED,)
         raise CustomException(serializer.errors)
 
 
 class LogoutView(APIView):
     permission_classes = [HasAPIKey, IsAuthenticated]
-
     def post(self, request: Request, format=None) -> Response:
         try:
             user = request.user
             token = request.user.auth_token
             token.delete()
-
             return Response(
                 success("Logged out successfully"),
-                status=status.HTTP_200_OK,
-            )
-
+                status=status.HTTP_200_OK, )
         except Exception as e:
             raise CustomException(str(e))
 
@@ -101,13 +90,10 @@ class TaskViewSet(ModelViewSet):
     queryset = Task.objects.all()
     serializer_class = TaskSerializer
     permission_classes = [HasAPIKey, IsTaskOwner]
-
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
-
     def get_queryset(self):
         return Task.objects.filter(user=self.request.user)
-
     def mark_task_completed(self, request, pk=None):
         try:
             task = self.get_object()
@@ -118,7 +104,6 @@ class TaskViewSet(ModelViewSet):
                 status=status.HTTP_200_OK,)
         except Exception as e:
             raise CustomException(str(e))
-
     def mark_task_incomplete(self, request, pk=None):
         try:
             task = self.get_object()
@@ -140,24 +125,20 @@ class CategoryViewSet(ModelViewSet):
 class UserProfileView(UpdateAPIView):
     serializer_class = UserSerializer
     permission_classes = [IsAuthenticated, HasAPIKey]
-
     def get_object(self):
         return self.request.user
-
     def update(self, request, *args, **kwargs):
         try:
             user = self.get_object()
             partial = kwargs.pop('partial', False)
             serializer = self.get_serializer(
-                user, data=request.data, partial=partial)
+            user, data=request.data, partial=partial)
             serializer.is_valid(raise_exception=True)
             print(serializer.validated_data)
             self.perform_update(serializer)
-
             return Response(
                 success(" Profile updated successfully"),
-                status=status.HTTP_200_OK,
-            )
+                status=status.HTTP_200_OK,)
         except Exception as e:
             raise exceptions.APIException(str(e))
 
