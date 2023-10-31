@@ -80,7 +80,7 @@ class SignupView(APIView):
 
 
 class LogoutView(APIView):
-    permission_classes = [IsAuthenticated, HasAPIKey]
+    permission_classes = [HasAPIKey, IsAuthenticated]
 
     def post(self, request: Request, format=None) -> Response:
         try:
@@ -100,7 +100,7 @@ class LogoutView(APIView):
 class TaskViewSet(ModelViewSet):
     queryset = Task.objects.all()
     serializer_class = TaskSerializer
-    permission_classes = [IsTaskOwner,HasAPIKey]
+    permission_classes = [HasAPIKey, IsTaskOwner]
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
@@ -134,12 +134,12 @@ class TaskViewSet(ModelViewSet):
 class CategoryViewSet(ModelViewSet):
     queryset = TaskCategory.objects.all()
     serializer_class = CategorySerializer
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated, HasAPIKey]
 
 
 class UserProfileView(UpdateAPIView):
     serializer_class = UserSerializer
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated, HasAPIKey]
 
     def get_object(self):
         return self.request.user
@@ -167,3 +167,4 @@ class TaskSearchView(viewsets.ModelViewSet):
     queryset = Task.objects.all()
     filter_backends = [filters.SearchFilter]
     search_fields = ['category', 'due_date', 'priority']
+    permission_classes = [IsAuthenticated, HasAPIKey]
