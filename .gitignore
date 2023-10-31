@@ -10,4 +10,4 @@
 .env
 logs/
 media
-env
+env/
