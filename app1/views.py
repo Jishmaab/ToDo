@@ -1,9 +1,10 @@
 from datetime import timedelta, timezone
+
 from django.contrib.auth import authenticate
 from django.core.exceptions import ValidationError
 from django.core.validators import validate_email
 from django.utils import timezone
-from rest_framework import exceptions,generics, status
+from rest_framework import exceptions, filters, status, viewsets
 from rest_framework.authtoken.models import Token
 from rest_framework.exceptions import AuthenticationFailed
 from rest_framework.generics import UpdateAPIView
@@ -12,41 +13,40 @@ from rest_framework.request import Request
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
-from rest_framework import filters
-from rest_framework import viewsets
-from utils.exceptions import CustomException, success, fail
+from rest_framework_api_key.permissions import HasAPIKey
+
+from utils.exceptions import CustomException, fail, success
+
 from .models import Task, TaskCategory, User
-from .permissions import  IsTaskOwner
-from .serializers import UserSerializer, TaskSerializer, CategorySerializer, validate_password
+from .permissions import IsTaskOwner
+from .serializers import (CategorySerializer, TaskSerializer, UserSerializer,
+                          validate_password)
+
 
 class LoginView(APIView):
-    permission_classes = []
-
     def post(self, request, format=None):
         serializer = UserSerializer(data=request.data)
         if not serializer.is_valid():
             return Response(fail(serializer.errors), status=status.HTTP_400_BAD_REQUEST)
-
         username = serializer.validated_data['username']
         password = serializer.validated_data['password']
         validate_password(password)
-        
         user = authenticate(username=username, password=password)
-        
+
         if user is not None:
             token, created = Token.objects.get_or_create(user=user)
             expiration_date = token.created + timedelta(days=1)
-            
+
             if expiration_date <= timezone.now():
                 token.delete()
                 token = Token.objects.create(user=user)
-                
+
             user_serializer = UserSerializer(user)
             response_data = {
                 "token": token.key,
                 "user": user_serializer.data,
             }
-            
+
             return Response(success(response_data), status=status.HTTP_200_OK)
 
         raise AuthenticationFailed("Invalid username or password")
@@ -79,11 +79,8 @@ class SignupView(APIView):
         raise CustomException(serializer.errors)
 
 
-
-
-
 class LogoutView(APIView):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated, HasAPIKey]
 
     def post(self, request: Request, format=None) -> Response:
         try:
@@ -109,35 +106,27 @@ class TaskViewSet(ModelViewSet):
         serializer.save(user=self.request.user)
 
     def get_queryset(self):
-        return Task.objects.filter(user=self.request.user)    
+        return Task.objects.filter(user=self.request.user)
 
     def mark_task_completed(self, request, pk=None):
         try:
             task = self.get_object()
-
             task.status = Task.StatusChoices.completed
             task.save()
-
             return Response(
                 success(" Marked as Completed "),
-                status=status.HTTP_200_OK,
-            )
-
+                status=status.HTTP_200_OK,)
         except Exception as e:
             raise CustomException(str(e))
 
     def mark_task_incomplete(self, request, pk=None):
         try:
             task = self.get_object()
-
             task.status = Task.StatusChoices.incomplete
             task.save()
-
             return Response(
                 success("Marked as Incomplete"),
-                status=status.HTTP_200_OK,
-            )
-
+                status=status.HTTP_200_OK, )
         except Exception as e:
             raise CustomException(str(e))
 
@@ -150,7 +139,7 @@ class CategoryViewSet(ModelViewSet):
 
 class UserProfileView(UpdateAPIView):
     serializer_class = UserSerializer
-    # permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
 
     def get_object(self):
         return self.request.user
@@ -173,11 +162,8 @@ class UserProfileView(UpdateAPIView):
             raise exceptions.APIException(str(e))
 
 
-
-
 class TaskSearchView(viewsets.ModelViewSet):
     serializer_class = TaskSerializer
     queryset = Task.objects.all()
     filter_backends = [filters.SearchFilter]
     search_fields = ['category', 'due_date', 'priority']
-

@@ -20,21 +20,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 env = environ.Env(DEBUG=(bool, False))
 environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
-SECRET_KEY = env('SECRET_KEY') #os.environ.get('SECRET_KEY')
-DEBUG = env.bool('DEBUG', default=False)
-DB_NAME = env('DB_NAME')
-DB_USER = env('DB_USER')
-DB_PASSWORD = env('DB_PASSWORD')
-
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-!whotqfwi$f0zb39%p@3@j=i)kk$kk^vhufeks5!#zo%b1i1ag'
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env.bool('DEBUG', default=False)
 
 ALLOWED_HOSTS = ['*']
 
@@ -49,16 +42,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app1',
-     'rest_framework',
+    'rest_framework',
     'rest_framework.authtoken',
     'rest_framework_api_key',
-     'corsheaders',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-         'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -110,9 +103,9 @@ WSGI_APPLICATION = 'TodoApp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'todo',  # os.environ.get('DB_NAME')
-        'USER': 'postgres',  #os.environ.get('DB_USER'),
-        'PASSWORD': 'aatoon', #os.environ.get('DB_PASSWORD')
+        'NAME': env('DB_NAME'),
+        'USER': env('DB_USER'),
+        'PASSWORD':env('DB_PASSWORD'),
         'HOST': 'localhost',
         'PORT': '5432',
     }   
@@ -163,26 +156,18 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'app1.User'
 
 REST_FRAMEWORK = {
-
     'EXCEPTION_HANDLER': 'utils.exceptions.custom_exception_handler',
-
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10,
-
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'TodoApp.modules.authentication.ExpiringTokenAuthentication'
-    ],
+    'TodoApp.modules.authentication.ExpiringTokenAuthentication' ],
     'DEFAULT_FILTER_BACKENDS': ['rest_framework.filters.SearchFilter'],
     'SEARCH_PARAM': 'search_param',
-    
     'DEFAULT_VERSIONING_CLASS': 'rest_framework.versioning.AcceptHeaderVersioning',
     'ALLOWED_VERSIONS': ['1.0', '2.0','3.0','3.14'],
     'DEFAULT_VERSION': '1.0',
-
     "DEFAULT_PERMISSION_CLASSES": [
-        # "rest_framework_api_key.permissions.HasAPIKey",
-    
-
+    "rest_framework_api_key.permissions.HasAPIKey",
     ]
 }
 
