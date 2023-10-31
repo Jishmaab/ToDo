@@ -1,0 +1,265 @@
+INFO 2023-10-27 09:37:41,767 autoreload Watching for file changes with StatReloader
+WARNING 2023-10-27 09:39:09,245 log Forbidden: /api/logout/
+INFO 2023-10-27 09:39:54,019 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 09:39:54,913 autoreload Watching for file changes with StatReloader
+ERROR 2023-10-27 09:39:59,995 log Internal Server Error: /api/logout/
+INFO 2023-10-27 09:44:24,811 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 09:44:25,705 autoreload Watching for file changes with StatReloader
+WARNING 2023-10-27 09:44:31,200 log Forbidden: /api/logout/
+INFO 2023-10-27 09:48:14,407 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 09:48:15,938 autoreload Watching for file changes with StatReloader
+WARNING 2023-10-27 09:57:12,976 log Forbidden: /api/logout/
+INFO 2023-10-27 09:59:55,210 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\TodoApp\settings.py changed, reloading.
+INFO 2023-10-27 09:59:56,969 autoreload Watching for file changes with StatReloader
+WARNING 2023-10-27 09:59:59,000 log Forbidden: /api/logout/
+INFO 2023-10-27 10:03:54,709 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\TodoApp\settings.py changed, reloading.
+INFO 2023-10-27 10:03:56,582 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 10:08:08,767 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\TodoApp\settings.py changed, reloading.
+INFO 2023-10-27 10:08:10,579 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 10:23:44,414 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 10:23:45,282 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 10:26:57,690 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\urls.py changed, reloading.
+INFO 2023-10-27 10:26:59,250 autoreload Watching for file changes with StatReloader
+WARNING 2023-10-27 10:29:56,931 log Unauthorized: /api/login/
+INFO 2023-10-27 10:30:37,687 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 10:30:38,741 autoreload Watching for file changes with StatReloader
+WARNING 2023-10-27 10:30:44,880 log Unauthorized: /api/login/
+WARNING 2023-10-27 10:31:37,386 log Unauthorized: /api/tasks/1/mark-completed/
+WARNING 2023-10-27 10:33:14,516 log Unauthorized: /api/login/
+WARNING 2023-10-27 10:33:28,021 log Unauthorized: /api/login/
+WARNING 2023-10-27 10:33:41,122 log Unauthorized: /api/login/
+WARNING 2023-10-27 10:37:28,399 log Unauthorized: /api/signup/
+INFO 2023-10-27 10:38:50,183 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\TodoApp\settings.py changed, reloading.
+INFO 2023-10-27 10:38:51,437 autoreload Watching for file changes with StatReloader
+ERROR 2023-10-27 10:40:14,033 log Internal Server Error: /api/login/
+INFO 2023-10-27 10:42:55,343 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 10:42:56,468 autoreload Watching for file changes with StatReloader
+ERROR 2023-10-27 10:43:02,303 log Internal Server Error: /api/login/
+INFO 2023-10-27 10:43:27,413 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 10:43:28,489 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 10:43:44,918 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 10:43:46,221 autoreload Watching for file changes with StatReloader
+ERROR 2023-10-27 10:44:30,493 log Internal Server Error: /api/tasks/1/mark-completed/
+INFO 2023-10-27 10:46:36,068 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\TodoApp\settings.py changed, reloading.
+INFO 2023-10-27 10:46:37,106 autoreload Watching for file changes with StatReloader
+ERROR 2023-10-27 10:47:04,175 log Internal Server Error: /api/tasks/1/mark-completed/
+WARNING 2023-10-27 10:47:22,860 log Not Found: /api/tasks/<1>/mark-completed/
+WARNING 2023-10-27 10:47:35,996 log Not Found: /api/tasks/<int:1>/mark-completed/
+ERROR 2023-10-27 10:47:45,793 log Internal Server Error: /api/tasks/1/mark-completed/
+INFO 2023-10-27 10:53:46,978 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 10:53:47,949 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 10:54:10,030 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 10:54:11,465 autoreload Watching for file changes with StatReloader
+ERROR 2023-10-27 10:54:13,752 log Internal Server Error: /api/tasks/1/mark-completed/
+INFO 2023-10-27 10:57:16,944 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 10:57:17,966 autoreload Watching for file changes with StatReloader
+ERROR 2023-10-27 10:57:22,562 log Internal Server Error: /api/tasks/1/mark-completed/
+INFO 2023-10-27 10:59:02,976 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\models.py changed, reloading.
+INFO 2023-10-27 10:59:04,356 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 10:59:26,284 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 10:59:47,106 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 10:59:48,120 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 11:01:11,996 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 11:01:13,772 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 11:01:22,552 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 11:01:23,662 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 11:02:06,038 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 11:02:07,142 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 11:02:32,241 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 11:02:33,184 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 11:03:14,948 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 11:03:16,165 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 11:06:20,424 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 11:06:21,441 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 11:15:08,653 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 11:15:09,373 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 11:16:33,173 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\urls.py changed, reloading.
+INFO 2023-10-27 11:16:33,864 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 11:17:56,560 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 11:18:18,094 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\urls.py changed, reloading.
+INFO 2023-10-27 11:18:18,835 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 11:48:47,976 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\models.py changed, reloading.
+INFO 2023-10-27 11:48:48,961 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 11:49:03,826 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 11:50:47,827 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\serializers.py changed, reloading.
+INFO 2023-10-27 11:50:48,508 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 12:08:20,492 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 12:08:21,212 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 12:08:29,116 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 12:08:29,838 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 12:09:13,529 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 12:09:14,250 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 12:11:18,366 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\permissions.py changed, reloading.
+INFO 2023-10-27 12:11:19,055 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 12:25:30,416 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 12:25:31,310 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 12:28:13,166 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 12:28:13,957 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 12:28:18,892 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 12:28:19,656 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 12:28:21,280 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 12:28:21,996 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 12:30:08,618 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 12:30:09,368 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 12:44:22,736 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 12:44:43,322 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 12:45:52,808 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 12:47:00,834 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 12:47:33,742 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 12:57:37,600 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 12:57:38,575 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 12:58:24,468 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 12:58:25,744 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 12:59:29,619 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 12:59:30,358 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 13:00:05,637 autoreload Watching for file changes with StatReloader
+ERROR 2023-10-27 13:00:15,698 exception Invalid HTTP_HOST header: '192.168.1.4:8000'. You may need to add '192.168.1.4' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\aatoo\Desktop\Jishma\TodoApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aatoo\Desktop\Jishma\TodoApp\env\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aatoo\Desktop\Jishma\TodoApp\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aatoo\Desktop\Jishma\TodoApp\env\Lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.4:8000'. You may need to add '192.168.1.4' to ALLOWED_HOSTS.
+WARNING 2023-10-27 13:00:15,862 log Bad Request: /api/login/
+INFO 2023-10-27 13:01:07,566 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\TodoApp\settings.py changed, reloading.
+INFO 2023-10-27 13:01:08,949 autoreload Watching for file changes with StatReloader
+WARNING 2023-10-27 13:01:11,543 log Unauthorized: /api/login/
+INFO 2023-10-27 13:02:43,772 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 13:02:44,504 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 13:03:23,545 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 13:03:24,789 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 13:03:31,764 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 13:04:13,324 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 13:04:14,260 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 13:07:29,891 autoreload Watching for file changes with StatReloader
+ERROR 2023-10-27 13:07:31,861 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\aatoo\Desktop\Jishma\TodoApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aatoo\Desktop\Jishma\TodoApp\env\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aatoo\Desktop\Jishma\TodoApp\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aatoo\Desktop\Jishma\TodoApp\env\Lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2023-10-27 13:07:31,969 log Bad Request: /api/logout/
+INFO 2023-10-27 13:07:53,744 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\TodoApp\settings.py changed, reloading.
+INFO 2023-10-27 13:07:55,088 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 13:08:00,152 autoreload Watching for file changes with StatReloader
+WARNING 2023-10-27 13:08:05,692 log Unauthorized: /api/logout/
+WARNING 2023-10-27 13:10:13,451 log Unauthorized: /api/tasks/1/mark-completed/
+WARNING 2023-10-27 13:10:47,755 log Unauthorized: /api/tasks/1/mark-completed/
+ERROR 2023-10-27 13:11:08,667 log Internal Server Error: /api/tasks/1/mark-completed/
+INFO 2023-10-27 13:13:21,743 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 13:13:22,836 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 13:21:12,735 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\models.py changed, reloading.
+INFO 2023-10-27 13:21:13,642 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 13:21:23,873 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\models.py changed, reloading.
+INFO 2023-10-27 13:21:24,698 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 13:21:32,760 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\models.py changed, reloading.
+INFO 2023-10-27 13:21:33,708 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 15:25:33,543 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 15:26:33,149 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\models.py changed, reloading.
+INFO 2023-10-27 15:26:34,148 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 15:26:49,074 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\serializers.py changed, reloading.
+INFO 2023-10-27 15:26:49,921 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 15:27:11,657 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 15:29:35,181 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\models.py changed, reloading.
+INFO 2023-10-27 15:29:35,993 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 15:43:00,087 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\permissions.py changed, reloading.
+INFO 2023-10-27 15:43:01,255 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 15:44:05,435 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 15:44:06,254 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 15:46:19,041 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 15:46:20,128 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 15:46:45,984 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 15:46:46,844 autoreload Watching for file changes with StatReloader
+ERROR 2023-10-27 15:50:21,691 log Internal Server Error: /api/tasks/
+ERROR 2023-10-27 15:56:19,555 log Internal Server Error: /api/tasks/
+ERROR 2023-10-27 15:57:10,555 log Internal Server Error: /api/tasks/
+INFO 2023-10-27 16:02:36,605 autoreload Watching for file changes with StatReloader
+ERROR 2023-10-27 16:02:40,390 log Internal Server Error: /api/tasks/
+INFO 2023-10-27 16:10:59,694 autoreload Watching for file changes with StatReloader
+WARNING 2023-10-27 16:12:18,375 log Bad Request: /api/tasks/
+INFO 2023-10-27 16:17:41,555 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 16:17:42,526 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 16:22:17,879 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-27 16:22:18,837 autoreload Watching for file changes with StatReloader
+INFO 2023-10-27 16:25:56,738 autoreload C:\Users\aatoo\Desktop\Jishma\TodoApp\TodoApp\settings.py changed, reloading.
+INFO 2023-10-27 16:25:58,098 autoreload Watching for file changes with StatReloader
+INFO 2023-10-28 10:44:58,825 autoreload Watching for file changes with StatReloader
+INFO 2023-10-28 10:48:18,530 autoreload C:\Users\JISHMA AB\Downloads\TodoApp\TodoApp\TodoApp\settings.py changed, reloading.
+INFO 2023-10-28 10:48:19,447 autoreload Watching for file changes with StatReloader
+INFO 2023-10-28 10:50:26,068 autoreload C:\Users\JISHMA AB\Downloads\TodoApp\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-28 10:50:26,906 autoreload Watching for file changes with StatReloader
+INFO 2023-10-28 10:53:09,170 autoreload Watching for file changes with StatReloader
+WARNING 2023-10-28 10:53:13,818 log Unauthorized: /api/signup/
+INFO 2023-10-28 10:53:37,058 autoreload C:\Users\JISHMA AB\Downloads\TodoApp\TodoApp\TodoApp\settings.py changed, reloading.
+INFO 2023-10-28 10:53:37,938 autoreload Watching for file changes with StatReloader
+ERROR 2023-10-28 10:53:41,692 log Internal Server Error: /api/signup/
+Traceback (most recent call last):
+  File "C:\Users\JISHMA AB\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JISHMA AB\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JISHMA AB\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JISHMA AB\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JISHMA AB\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JISHMA AB\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+INFO 2023-10-28 10:59:22,643 autoreload C:\Users\JISHMA AB\Downloads\TodoApp\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-28 10:59:23,492 autoreload Watching for file changes with StatReloader
+WARNING 2023-10-28 10:59:29,291 log Bad Request: /api/signup/
+WARNING 2023-10-28 11:02:34,678 log Not Found: /api/signup/
+WARNING 2023-10-28 11:04:24,850 log Not Found: /api/signup/
+INFO 2023-10-28 11:16:07,001 autoreload C:\Users\JISHMA AB\Downloads\TodoApp\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-28 11:16:07,847 autoreload Watching for file changes with StatReloader
+INFO 2023-10-28 11:20:07,850 autoreload C:\Users\JISHMA AB\Downloads\TodoApp\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-28 11:20:08,817 autoreload Watching for file changes with StatReloader
+INFO 2023-10-28 11:31:21,177 autoreload C:\Users\JISHMA AB\Downloads\TodoApp\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-28 11:31:21,975 autoreload Watching for file changes with StatReloader
+WARNING 2023-10-28 11:37:37,968 log Not Found: /api/signup/
+WARNING 2023-10-28 11:38:00,470 log Not Found: /api/signup/
+WARNING 2023-10-28 11:38:15,735 log Not Found: /api/signup/
+WARNING 2023-10-28 11:38:24,115 log Not Found: /api/signup/
+WARNING 2023-10-28 11:38:32,764 log Not Found: /api/signup/
+INFO 2023-10-28 16:10:18,171 autoreload C:\Users\JISHMA AB\Downloads\TodoApp\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-28 16:10:19,864 autoreload Watching for file changes with StatReloader
+INFO 2023-10-28 16:21:32,299 autoreload C:\Users\JISHMA AB\Downloads\TodoApp\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-28 16:21:33,101 autoreload Watching for file changes with StatReloader
+INFO 2023-10-28 16:22:10,652 autoreload C:\Users\JISHMA AB\Downloads\TodoApp\TodoApp\app1\urls.py changed, reloading.
+INFO 2023-10-28 16:22:11,365 autoreload Watching for file changes with StatReloader
+INFO 2023-10-28 16:22:35,273 autoreload C:\Users\JISHMA AB\Downloads\TodoApp\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-28 16:22:36,105 autoreload Watching for file changes with StatReloader
+INFO 2023-10-28 17:31:57,526 autoreload C:\Users\JISHMA AB\Downloads\TodoApp\TodoApp\app1\views.py changed, reloading.
+INFO 2023-10-28 17:31:58,560 autoreload Watching for file changes with StatReloader
+INFO 2023-10-30 09:33:43,336 autoreload Watching for file changes with StatReloader
+INFO 2023-10-30 09:35:39,398 autoreload C:\Users\aatoo\Downloads\TodoApp (2)\TodoApp\TodoApp\TodoApp\settings.py changed, reloading.
+INFO 2023-10-30 09:35:40,748 autoreload Watching for file changes with StatReloader
+INFO 2023-10-30 09:49:26,548 autoreload C:\Users\aatoo\Downloads\TodoApp (2)\TodoApp\TodoApp\TodoApp\settings.py changed, reloading.
+INFO 2023-10-30 09:49:28,822 autoreload Watching for file changes with StatReloader
+INFO 2023-10-30 09:50:09,615 autoreload C:\Users\aatoo\Downloads\TodoApp (2)\TodoApp\TodoApp\TodoApp\settings.py changed, reloading.
+INFO 2023-10-30 09:50:11,042 autoreload Watching for file changes with StatReloader
+INFO 2023-10-31 11:42:53,811 autoreload Watching for file changes with StatReloader
+INFO 2023-10-31 11:43:23,234 autoreload C:\TodoApp (2)\TodoApp\TodoApp\TodoApp\settings.py changed, reloading.
+INFO 2023-10-31 11:43:24,347 autoreload Watching for file changes with StatReloader
