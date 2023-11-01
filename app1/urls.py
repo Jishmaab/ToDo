@@ -14,7 +14,7 @@ urlpatterns = [
     path('login/', views.LoginView.as_view(), name='login'),
     path('logout/', views.LogoutView.as_view(), name='logout'),
     path('profile/', views.UserProfileView.as_view(), name='profile'),
-    path('tasks/<int:pk>/mark-completed/',views.TaskViewSet.as_view({'post': 'mark_task_completed'}), name='mark-task-completed'),
-    path('tasks/<int:pk>/mark-incomplete/', views.TaskViewSet.as_view({'post': 'mark_task_incomplete'}), name='mark-task-incomplete'),
+    path('tasks/<int:pk>/mark_task/',views.TaskViewSet.as_view({'post': 'mark_task'}), name='mark-task-completed'),
+    # path('tasks/<int:pk>/mark-incomplete/', views.TaskViewSet.as_view({'post': 'mark_task_incomplete'}), name='mark-task-incomplete'),
 
 ]+ router.urls
