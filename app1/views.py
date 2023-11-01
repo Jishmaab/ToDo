@@ -106,28 +106,26 @@ class TaskViewSet(ModelViewSet):
     def get_queryset(self):
         return Task.objects.filter(user=self.request.user)
 
-    def mark_task_status(self, request, pk=None):
-        task = self.get_object()
-
-        status_choice = request.data.get('status')
-
-        if status_choice == "completed":
+    def mark_task_completed(self, request, pk=None):
+        try:
+            task = self.get_object()
             task.status = Task.StatusChoices.completed
-            message = "Marked as Completed"
-        elif status_choice == "incomplete":
-            task.status = Task.StatusChoices.incomplete
-            message = "Marked as Incomplete"
-        else:
+            task.save()
             return Response(
-                fail("Invalid status choice"),
-                status=status.HTTP_400_BAD_REQUEST,
-            )
-
-        task.save()
-        return Response(
-            success(message),
-            status=status.HTTP_200_OK,
-        )
+                success(" Marked as Completed "),
+                status=status.HTTP_200_OK,)
+        except Exception as e:
+            raise CustomException(str(e))
+    def mark_task_incomplete(self, request, pk=None):
+        try:
+            task = self.get_object()
+            task.status = Task.StatusChoices.incomplete
+            task.save()
+            return Response(
+                success("Marked as Incomplete"),
+                status=status.HTTP_200_OK, )
+        except Exception as e:
+            raise CustomException(str(e))
 
             
 
